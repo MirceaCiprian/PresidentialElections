@@ -30,6 +30,41 @@
                 <label asp-for="Input.LastName" class="form-label"></label>
                 <span asp-validation-for="Input.LastName" class="text-danger"></span>
             </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Description" class="form-control" placeholder="Please enter your phone number." />
+                <label asp-for="Input.Description" class="form-label"></label>
+                <span asp-validation-for="Input.Description" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.DateOfBirth" class="form-control" placeholder="Please enter your phone number." />
+                <label asp-for="Input.DateOfBirth" class="form-label"></label>
+                <span asp-validation-for="Input.DateOfBirth" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <select class="form-select" asp-for="Input.Genre" aria-label="Floating label select example">
+                    <option selected>@Model.Input.Genre</option>
+                    <option value="Man">Man</option>
+                    <option value="Woman">Woman</option>
+                </select>
+                <label asp-for="Input.Genre">Select your genre</label>
+            </div>
+            <div class="form-floating mb-3">
+                <select class="form-select" asp-for="Input.isParticipating" aria-label="Floating label select example">
+                    <option value="true">Enrolled</option>
+                    <option value="false">Not enrolled</option>
+                </select>
+                <label asp-for="Input.isParticipating">Choose if you want to be a candidate</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.voted" type="text" class="form-control" placeholder="Please choose your username." disabled />
+                <label asp-for="Input.voted" class="form-label"></label>
+            </div>
+            <label asp-for="Input.isParticipating">Choose if you want to be a candidate</label>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.noVotes" class="form-control" placeholder="Please enter your phone number." />
+                <label asp-for="Input.noVotes" class="form-label"></label>
+                <span asp-validation-for="Input.noVotes" class="text-danger"></span>
+            </div>
             <button id="update-profile-button" type="submit" class="w-100 btn btn-lg btn-primary">Save</button>
         </form>
     </div>

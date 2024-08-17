@@ -106,6 +106,15 @@ namespace WebApp1.Areas.Identity.Pages.Account
             [Required]
             [Display(Name = "Last Name")]
             public string LastName { get; set; }
+
+            public string Description { get; set; }
+
+            public string Genre { get; set; }
+            public DateTime DateOfBirth { get; set; }
+            public Boolean isParticipating {  get; set; }
+            public Boolean voted { get; set; }
+            public int noVotes {  get; set; }
+
         }
 
 
@@ -125,6 +134,13 @@ namespace WebApp1.Areas.Identity.Pages.Account
 
                 user.FirstName = Input.FirstName;
                 user.LastName = Input.LastName;
+                user.Description = Input.Description;
+                user.DateOfBirth = Input.DateOfBirth; 
+                user.Genre = Input.Genre;
+                user.isParticipating = Input.isParticipating;
+                user.voted = Input.voted;
+                user.noVotes = Input.noVotes;
+
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);

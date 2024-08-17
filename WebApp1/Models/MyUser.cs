@@ -6,8 +6,11 @@ namespace WebApp1.Models
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public DateTime DateOfBirth { get; set; }
-        public string? Genre { get; set; }
-        public Boolean voted = false;
+        public string Description { get; set; } = string.Empty;
+        public DateTime DateOfBirth { get; set; } = DateTime.UtcNow;
+        public string? Genre { get; set; } = "Choose genre";
+        public Boolean isParticipating { get; set; } = false;
+        public Boolean voted { get; set; } = false; 
+        public int noVotes { get; set; } = 0;
     }
 }

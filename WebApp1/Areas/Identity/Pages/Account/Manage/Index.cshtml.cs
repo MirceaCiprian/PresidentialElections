@@ -61,6 +61,12 @@ namespace WebApp1.Areas.Identity.Pages.Account.Manage
             public string PhoneNumber { get; set; }
             public string FirstName { get; set; }
             public string LastName { get; set; }
+            public string Description { get; set; }
+            public string Genre { get; set; }
+            public DateTime DateOfBirth { get; set; }
+            public Boolean isParticipating { get; set; }
+            public Boolean voted { get; set; }
+            public int noVotes { get; set; }
         }
 
         private async Task LoadAsync(MyUser user)
@@ -76,7 +82,12 @@ namespace WebApp1.Areas.Identity.Pages.Account.Manage
                 PhoneNumber = phoneNumber,
                 FirstName = currentUser.FirstName,
                 LastName = currentUser.LastName,
-
+                Description = currentUser.Description,
+                Genre   = currentUser.Genre,
+                DateOfBirth = currentUser.DateOfBirth,
+                isParticipating = currentUser.isParticipating,
+                voted = currentUser.voted,
+                noVotes = currentUser.noVotes,
             };
         }
 
@@ -115,6 +126,40 @@ namespace WebApp1.Areas.Identity.Pages.Account.Manage
                     StatusMessage = "Unexpected error when trying to set phone number.";
                     return RedirectToPage();
                 }
+            }
+
+            if (Input.FirstName != user.FirstName)
+            {
+                user.FirstName = Input.FirstName;
+                await _userManager.UpdateAsync(user);
+            }
+
+            if (Input.LastName != user.LastName)
+            {
+                user.LastName = Input.LastName;
+                await _userManager.UpdateAsync(user);
+            }
+
+            if (Input.Description != user.Description)
+            {
+                user.Description = Input.Description;
+                await _userManager.UpdateAsync(user);
+            }
+            if (Input.DateOfBirth != user.DateOfBirth)
+            {
+                user.DateOfBirth = Input.DateOfBirth;
+                await _userManager.UpdateAsync(user);
+            }
+            if (Input.Genre != user.Genre)
+            {
+                user.Genre = Input.Genre;
+                await _userManager.UpdateAsync(user);
+            }
+
+            if (Input.isParticipating != user.isParticipating)
+            {
+                user.isParticipating = Input.isParticipating;
+                await _userManager.UpdateAsync(user);
             }
 
             await _signInManager.RefreshSignInAsync(user);
