@@ -43,7 +43,7 @@ namespace WebApp1.Controllers
         [Authorize]
         public IActionResult Index()
         {
-            var users = _userManager.Users;
+            var users = _userManager.Users.OrderByDescending(x => x.noVotes);
             return View(users);
         }
 
@@ -61,12 +61,16 @@ namespace WebApp1.Controllers
         //    return RedirectToAction("Index");
         //}
 
-        public async Task<IActionResult> UpdateVotes(string test)
+        public async Task<IActionResult> UpdateVotes(string buttonUserId)
         {
             /* get user for the button */
-            //var user =  _userManager.FindByIdAsync(buttonUser.Id).Result;
-            /* update noVotes attribute for current user
+            var user =  _userManager.FindByIdAsync(buttonUserId).Result;
+            if (user == null)
+                return NotFound();
+            user.noVotes += 1;
+            await _userManager.UpdateAsync(user);
 
+            /* update noVotes attribute for current user
             /* get logged in user */
             //var user = _userManager.GetUserAsync(User).Result;
             //if (user == null)

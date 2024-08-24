@@ -4,6 +4,13 @@
 }
 @{
     int rowNo = 0;
+    bool show = true;
+ }
+
+@functions{
+    
+}
+
 }
 
 <div class="text-center">
@@ -34,7 +41,11 @@
                     <td>@user.FirstName</td>
                     <td>@user.LastName</td>
                     <td>@user.noVotes</td>
-                    <td><a type="submit" asp-controller="Home" asp-action="UpdateVotes" name="" value="1234" class="btn btn-primary mb-3" style="width:auto"> Vote </a></td>
+                    <td>
+                        <form method="post" asp-controller="Home" asp-action="UpdateVotes">
+                                <button class="btn btn-primary mb-3" name="buttonUserId" value="@user.Id" style="width:auto"> Vote</button>
+                        </form>
+                    </td>
                     
                 </tr>
             }
