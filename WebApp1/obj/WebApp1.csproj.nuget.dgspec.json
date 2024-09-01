@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dotnet projects\\PresidentialElections\\WebApp1\\WebApp1.csproj": {}
+    "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\WebApp1.csproj": {}
   },
   "projects": {
-    "D:\\Dotnet projects\\PresidentialElections\\WebApp1\\WebApp1.csproj": {
+    "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\WebApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dotnet projects\\PresidentialElections\\WebApp1\\WebApp1.csproj",
+        "projectUniqueName": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\WebApp1.csproj",
         "projectName": "WebApp1",
-        "projectPath": "D:\\Dotnet projects\\PresidentialElections\\WebApp1\\WebApp1.csproj",
+        "projectPath": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\WebApp1.csproj",
         "packagesPath": "C:\\Users\\Ciprian\\.nuget\\packages\\",
-        "outputPath": "D:\\Dotnet projects\\PresidentialElections\\WebApp1\\obj\\",
+        "outputPath": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ciprian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -74,7 +74,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             }
           },
           "imports": [

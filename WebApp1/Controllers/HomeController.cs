@@ -43,6 +43,15 @@ namespace WebApp1.Controllers
         [Authorize]
         public IActionResult Index()
         {
+            var user = _userManager.GetUserAsync(User).Result;
+
+            Input = new InputModel
+            {
+                voted = user.voted,
+            };
+
+            ViewBag.voted = user.voted;
+
             var users = _userManager.Users.OrderByDescending(x => x.noVotes);
             return View(users);
         }
@@ -72,11 +81,11 @@ namespace WebApp1.Controllers
 
             /* update noVotes attribute for current user
             /* get logged in user */
-            //var user = _userManager.GetUserAsync(User).Result;
-            //if (user == null)
-            //    return NotFound();
-            //user.voted = true;
-            //await _userManager.UpdateAsync(user);
+            var currentuser = _userManager.GetUserAsync(User).Result;
+            if (currentuser == null)
+               return NotFound();
+            currentuser.voted = true;
+            await _userManager.UpdateAsync(currentuser);
 
             return RedirectToAction("Index");
         }

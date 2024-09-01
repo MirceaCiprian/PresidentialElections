@@ -1,29 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Dotnet projects\\PresidentialElections\\WebApp1\\",
+  "WorkspaceRootPath": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|d:\\dotnet projects\\presidentialelections\\webapp1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|d:\\dotnet projects\\git\\presidentialelections\\webapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|d:\\dotnet projects\\git\\presidentialelections\\webapp1\\data\\contextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|solutionrelative:data\\contextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|d:\\dotnet projects\\git\\presidentialelections\\webapp1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|d:\\dotnet projects\\presidentialelections\\webapp1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|d:\\dotnet projects\\git\\presidentialelections\\webapp1\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|d:\\dotnet projects\\git\\presidentialelections\\webapp1\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|solutionrelative:enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|d:\\dotnet projects\\git\\presidentialelections\\webapp1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|d:\\dotnet projects\\presidentialelections\\webapp1\\areas\\identity\\pages\\account\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|d:\\dotnet projects\\git\\presidentialelections\\webapp1\\areas\\identity\\pages\\account\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|d:\\dotnet projects\\presidentialelections\\webapp1\\areas\\identity\\pages\\account\\manage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|d:\\dotnet projects\\git\\presidentialelections\\webapp1\\areas\\identity\\pages\\account\\manage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|d:\\dotnet projects\\presidentialelections\\webapp1\\models\\myuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|d:\\dotnet projects\\git\\presidentialelections\\webapp1\\models\\myuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|solutionrelative:models\\myuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|d:\\dotnet projects\\presidentialelections\\webapp1\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|d:\\dotnet projects\\git\\presidentialelections\\webapp1\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D0978A8-D18B-455F-9A1F-0ACE86420152}|WebApp1.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -38,25 +54,24 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Dotnet projects\\PresidentialElections\\WebApp1\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Dotnet projects\\PresidentialElections\\WebApp1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AQIAABgAAAAAAAAAAAAAAC0AAABpAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-13T11:35:55.006Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "D:\\Dotnet projects\\PresidentialElections\\WebApp1\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "DocumentMoniker": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ToolTip": "D:\\Dotnet projects\\PresidentialElections\\WebApp1\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "ViewState": "AQIAAEkAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -65,52 +80,102 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Dotnet projects\\PresidentialElections\\WebApp1\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+              "DocumentMoniker": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-              "ToolTip": "D:\\Dotnet projects\\PresidentialElections\\WebApp1\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+              "ToolTip": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
               "ViewState": "AQIAACcAAAAAAAAAAAAAAD8AAABwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-16T08:30:02.18Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
+              "ToolTip": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAqwIQAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T14:49:09.317Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAAAFQAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T07:47:01.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContextSeed.cs",
+              "DocumentMoniker": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Data\\ContextSeed.cs",
+              "RelativeDocumentMoniker": "Data\\ContextSeed.cs",
+              "ToolTip": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Data\\ContextSeed.cs",
+              "RelativeToolTip": "Data\\ContextSeed.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T07:44:29.344Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "D:\\Dotnet projects\\PresidentialElections\\WebApp1\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
-              "ToolTip": "D:\\Dotnet projects\\PresidentialElections\\WebApp1\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAqwIQAAAAxAAAA",
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T14:49:09.317Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-08-31T07:44:02.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Enums\\Roles.cs",
+              "RelativeDocumentMoniker": "Enums\\Roles.cs",
+              "ToolTip": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Enums\\Roles.cs",
+              "RelativeToolTip": "Enums\\Roles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T07:41:51.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Dotnet projects\\PresidentialElections\\WebApp1\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Dotnet projects\\PresidentialElections\\WebApp1\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAiwDAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAABdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T19:44:34.189Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "MyUser.cs",
-              "DocumentMoniker": "D:\\Dotnet projects\\PresidentialElections\\WebApp1\\Models\\MyUser.cs",
+              "DocumentMoniker": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Models\\MyUser.cs",
               "RelativeDocumentMoniker": "Models\\MyUser.cs",
-              "ToolTip": "D:\\Dotnet projects\\PresidentialElections\\WebApp1\\Models\\MyUser.cs",
+              "ToolTip": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\Models\\MyUser.cs",
               "RelativeToolTip": "Models\\MyUser.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

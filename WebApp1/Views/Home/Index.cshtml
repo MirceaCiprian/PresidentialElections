@@ -11,8 +11,6 @@
     
 }
 
-}
-
 <div class="text-center">
     <h1 class="display-4">2024 Elections </h1>
 </div>
@@ -42,9 +40,18 @@
                     <td>@user.LastName</td>
                     <td>@user.noVotes</td>
                     <td>
-                        <form method="post" asp-controller="Home" asp-action="UpdateVotes">
+                        @if(@ViewBag.voted == false)
+                        {
+                            <form method="post" asp-controller="Home" asp-action="UpdateVotes">
                                 <button class="btn btn-primary mb-3" name="buttonUserId" value="@user.Id" style="width:auto"> Vote</button>
-                        </form>
+                            </form>
+                        }
+                        else
+                        {
+                            <form method="post" asp-controller="Home" asp-action="UpdateVotes">
+                                <button class="btn btn-primary mb-3" name="buttonUserId" value="@user.Id" style="display:none"> Vote</button>
+                            </form>
+                        }
                     </td>
                     
                 </tr>
