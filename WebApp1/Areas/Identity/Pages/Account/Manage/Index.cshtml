@@ -56,12 +56,11 @@
                 <label asp-for="Input.isParticipating">Choose if you want to be a candidate</label>
             </div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.voted" type="text" class="form-control" placeholder="Please choose your username."/>
+                <input asp-for="Input.voted" type="text" class="form-control" placeholder="Please choose your username." disabled/>
                 <label asp-for="Input.voted" class="form-label"></label>
             </div>
-            <label asp-for="Input.isParticipating">Choose if you want to be a candidate</label>
             <div class="form-floating mb-3">
-                <input asp-for="Input.noVotes" class="form-control" placeholder="Please enter your phone number." />
+                <input asp-for="Input.noVotes" class="form-control" placeholder="Please enter your phone number." disabled />
                 <label asp-for="Input.noVotes" class="form-label"></label>
                 <span asp-validation-for="Input.noVotes" class="text-danger"></span>
             </div>

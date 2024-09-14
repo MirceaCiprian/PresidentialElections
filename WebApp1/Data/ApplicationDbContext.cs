@@ -10,5 +10,7 @@ namespace WebApp1.Data
             : base(options)
         {
         }
+
+        public DbSet<UserRankings> UserRankingsTable { get; set; }
     }
 }

@@ -34,24 +34,25 @@
         <tbody>
             @foreach (var user in Model)
             {
-                <tr>
-                    <th scope="row">@(rowNo += 1)</th>
+                    <tr>
+                        <th scope="row">@(rowNo += 1)</th>
                     <td>@user.FirstName</td>
                     <td>@user.LastName</td>
                     <td>@user.noVotes</td>
                     <td>
-                        @if(@ViewBag.voted == false)
-                        {
+@* Enable / disable the user to vote only once.*@
+@*                         @if(@ViewBag.voted == false)
+                        { *@
                             <form method="post" asp-controller="Home" asp-action="UpdateVotes">
                                 <button class="btn btn-primary mb-3" name="buttonUserId" value="@user.Id" style="width:auto"> Vote</button>
                             </form>
-                        }
+@*                         }
                         else
                         {
                             <form method="post" asp-controller="Home" asp-action="UpdateVotes">
                                 <button class="btn btn-primary mb-3" name="buttonUserId" value="@user.Id" style="display:none"> Vote</button>
                             </form>
-                        }
+                        } *@
                     </td>
                     
                 </tr>
@@ -66,5 +67,11 @@ else
             No Users Added Yet
         </div>
     </div>
+}
+@if(@ViewBag.permision == true)
+{
+    <form method="post" asp-controller="Home" asp-action="VotingRounds">
+        <button class="btn btn-primary mb-3"> new Round </button>
+    </form>
 }
 

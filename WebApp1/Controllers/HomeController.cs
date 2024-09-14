@@ -1,9 +1,12 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using SQLitePCL;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 using System.Security.Claims;
+using WebApp1.Data;
 using WebApp1.Models;
 
 namespace WebApp1.Controllers
@@ -12,11 +15,17 @@ namespace WebApp1.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly UserManager<MyUser> _userManager;
-        
-        public HomeController(ILogger<HomeController> logger, UserManager<MyUser> userManager) //user manager este injectat prin controller
+        private readonly ApplicationDbContext _context;
+        private readonly RoleManager<IdentityRole> _roleManager;
+
+        List<UserRankings> list1 = new List<UserRankings>();
+
+        public HomeController(ILogger<HomeController> logger, UserManager<MyUser> userManager, ApplicationDbContext context, RoleManager<IdentityRole> roleManager) //user manager este injectat prin controller
         {
             _logger = logger;
             _userManager = userManager;
+            _context = context;
+            _roleManager = roleManager;
         }
 
         public InputModel Input { get; set; }
@@ -40,19 +49,27 @@ namespace WebApp1.Controllers
             public int noVotes { get; set; }
         }
 
-        [Authorize]
+        [AllowAnonymous]
         public IActionResult Index()
         {
             var user = _userManager.GetUserAsync(User).Result;
 
-            Input = new InputModel
-            {
-                voted = user.voted,
-            };
+            if(user != null) {
 
-            ViewBag.voted = user.voted;
+                Input = new InputModel
+                {
+                    voted = user.voted,
+                };
 
-            var users = _userManager.Users.OrderByDescending(x => x.noVotes);
+                ViewBag.voted = user.voted;
+
+                if (_userManager.IsInRoleAsync(user, "Admin").Result == true)
+                {
+                    ViewBag.permision = true;
+                }
+            }
+
+            var users = _userManager.Users.Where(u => u.isParticipating == true).OrderByDescending(x => x.noVotes);
             return View(users);
         }
 
@@ -90,9 +107,44 @@ namespace WebApp1.Controllers
             return RedirectToAction("Index");
         }
 
+        public async Task<IActionResult> VotingRounds()
+        {
+            /* Copy the users from the current voting round to the ranking page */
+            var users = _userManager.Users.Where(u => u.isParticipating == true);
+            foreach (var user in users)
+            {
+                UserRankings u1 = new UserRankings();
+                u1.Id = user.Id;
+                u1.FirstName = user.FirstName;
+                u1.LastName = user.LastName;
+                u1.noVotes = user.noVotes;
+                list1.Add(u1);
+
+                user.noVotes = 0;
+                await _userManager.UpdateAsync(user);
+            }
+
+            foreach(var entity in _context.UserRankingsTable)
+            {
+                _context.UserRankingsTable.Remove(entity);
+            }
+
+            _context.UserRankingsTable.AddRange(list1);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+
         public IActionResult Privacy()
         {
             return View();
+        }
+
+        [AllowAnonymous]
+        public IActionResult Rankings()
+        {
+
+            return View(_context.UserRankingsTable.OrderByDescending(x => x.noVotes).ToList());
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

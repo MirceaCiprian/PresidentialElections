@@ -22,6 +22,7 @@ using WebApp1.Models;
 
 namespace WebApp1.Areas.Identity.Pages.Account
 {
+    [AllowAnonymous]
     public class RegisterModel : PageModel
     {
         private readonly SignInManager<MyUser> _signInManager;
