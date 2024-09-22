@@ -18,7 +18,9 @@ namespace WebApp1.Controllers
         private readonly ApplicationDbContext _context;
         private readonly RoleManager<IdentityRole> _roleManager;
 
-        public HomeController(ILogger<HomeController> logger, UserManager<MyUser> userManager, ApplicationDbContext context, RoleManager<IdentityRole> roleManager) //user manager este injectat prin controller
+        /* dependencies are injected using the constructor*/
+        public HomeController(ILogger<HomeController> logger, UserManager<MyUser> userManager, 
+                                ApplicationDbContext context, RoleManager<IdentityRole> roleManager) 
         {
             _logger = logger;
             _userManager = userManager;
