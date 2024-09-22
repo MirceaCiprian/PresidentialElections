@@ -43,10 +43,13 @@
 @* Enable / disable the user to vote only once.*@
 @*                         @if(@ViewBag.voted == false)
                         { *@
-                            <form method="post" asp-controller="Home" asp-action="UpdateVotes">
+                        @if (ViewBag.allowVote == true)
+                        {
+                            <form method="post" asp-controller="Voting" asp-action="UpdateVotes">
                                 <button class="btn btn-primary mb-3" name="buttonUserId" value="@user.Id" style="width:auto"> Vote</button>
                             </form>
-@*                         }
+                        }
+                        @*                         }
                         else
                         {
                             <form method="post" asp-controller="Home" asp-action="UpdateVotes">
@@ -70,7 +73,7 @@ else
 }
 @if(@ViewBag.permision == true)
 {
-    <form method="post" asp-controller="Home" asp-action="VotingRounds">
+    <form method="post" asp-controller="Voting" asp-action="VotingRounds">
         <button class="btn btn-primary mb-3"> new Round </button>
     </form>
 }

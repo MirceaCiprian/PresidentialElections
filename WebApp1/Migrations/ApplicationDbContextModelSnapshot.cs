@@ -267,9 +267,28 @@ namespace WebApp1.Migrations
                     b.Property<int>("noVotes")
                         .HasColumnType("int");
 
+                    b.Property<int>("round")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("UserRankingsTable");
+                });
+
+            modelBuilder.Entity("WebApp1.Models.VotingSystem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("currentRound")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("VotingSystemTable");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

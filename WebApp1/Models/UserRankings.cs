@@ -2,9 +2,11 @@
 {
     public class UserRankings
     {
-        public string Id { get; set; } = "1234";
-        public string FirstName { get; set; } = "1234";
-        public string LastName { get; set; } = "1234";
+
+        public string? Id { get; set; }
+        public string FirstName { get; set; } = "";
+        public string LastName { get; set; } = "";
         public int noVotes { get; set; } = 0;
+        public int round { get; set; } = 0;
     }
 }

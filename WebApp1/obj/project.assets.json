@@ -8485,11 +8485,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\WebApp1.csproj",
+      "projectUniqueName": "D:\\01.Dotnet projects\\git\\PresidentialElections\\WebApp1\\WebApp1.csproj",
       "projectName": "WebApp1",
-      "projectPath": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\WebApp1.csproj",
+      "projectPath": "D:\\01.Dotnet projects\\git\\PresidentialElections\\WebApp1\\WebApp1.csproj",
       "packagesPath": "C:\\Users\\Ciprian\\.nuget\\packages\\",
-      "outputPath": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\obj\\",
+      "outputPath": "D:\\01.Dotnet projects\\git\\PresidentialElections\\WebApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ciprian\\AppData\\Roaming\\NuGet\\NuGet.Config",

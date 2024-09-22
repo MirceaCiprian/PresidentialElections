@@ -15,27 +15,6 @@ namespace WebApp1.Controllers
 {
     public class SeedData
     {
-        public static void SeedDB(ApplicationDbContext context, string adminID)
-        { 
-            //if (context.Contact.Any())
-            //{
-            //    return;   // DB has been seeded
-            //}
-
-            //context.AddRange(
-            //    new Contact
-            //    {
-            //        Name = "Debra Garcia",
-            //        Address = "1234 Main St",
-            //        City = "Redmond",
-            //        State = "WA",
-            //        Zip = "10999",
-            //        Email = "debra@example.com",
-            //        Status = ContactStatus.Approved,
-            //        OwnerID = adminID
-            //    });
-        }
-
         public static async Task Initialize(IServiceProvider serviceProvider, string testUserPw)
         {
             using (var context = new ApplicationDbContext(

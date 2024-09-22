@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7h0SOqPaOI/qbLWrA2+9a+7fZtqBLVg65uQmFmJNhiEsLTj6otkE+sVDYLqfOcvC5Rl2JleYLeWmozhnrVRH4Q==",
+  "dgSpecHash": "NGL2i6I6+QoQUrwQVX4AJNEbfUIlsVcWf/nDjX+VvWhPOgsxzXyKB/SxHzBn4IkcJLw2nSNnKLFc1eVV1jJhgA==",
   "success": true,
-  "projectFilePath": "D:\\Dotnet projects\\git\\PresidentialElections\\WebApp1\\WebApp1.csproj",
+  "projectFilePath": "D:\\01.Dotnet projects\\git\\PresidentialElections\\WebApp1\\WebApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ciprian\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Ciprian\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

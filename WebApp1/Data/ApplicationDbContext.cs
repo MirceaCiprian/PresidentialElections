@@ -12,5 +12,6 @@ namespace WebApp1.Data
         }
 
         public DbSet<UserRankings> UserRankingsTable { get; set; }
+        public DbSet<VotingSystem> VotingSystemTable { get; set;}
     }
 }

@@ -3,12 +3,15 @@
     ViewData["Title"] = "Rankings";
     Layout = "~/Views/Shared/_Layout.cshtml";
     int rowNo = 0;
+    int roundInView = 0;
 }
 
 <h1>Last Rankings</h1>
 
 @model List<UserRankings>
-    
+
+
+
 @if(Model.Any())
 {
     <table class="table">
@@ -18,16 +21,24 @@
                 <th scope="col">First Name</th>
                 <th scope="col">Last</th>
                 <th scope="col">No Votes</th>
+                <th scope="col">Round</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var element in Model)
             {
+                @if (roundInView != element.round)
+                {
+                    roundInView = element.round;
+                    rowNo = 0;
+                <td><br /> <br /></td>
+                }
                 <tr>
                     <th scope="row">@(rowNo += 1)</th>
                     <td>@element.FirstName</td>
                     <td>@element.LastName</td>
                     <td>@element.noVotes</td>
+                    <td>@element.round</td>
                 </tr>
             }
         </tbody>
