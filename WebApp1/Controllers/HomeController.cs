@@ -18,9 +18,9 @@ namespace WebApp1.Controllers
         private readonly ApplicationDbContext _context;
         private readonly RoleManager<IdentityRole> _roleManager;
 
-        /* dependencies are injected using the constructor*/
-        public HomeController(ILogger<HomeController> logger, UserManager<MyUser> userManager, 
-                                ApplicationDbContext context, RoleManager<IdentityRole> roleManager) 
+        /* dependencies are injected using the constructor */
+        public HomeController(ILogger<HomeController> logger, UserManager<MyUser> userManager,
+                                ApplicationDbContext context, RoleManager<IdentityRole> roleManager)
         {
             _logger = logger;
             _userManager = userManager;
@@ -30,31 +30,13 @@ namespace WebApp1.Controllers
 
         public InputModel Input { get; set; }
 
-        public class InputModel
-        {
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
-            [Phone]
-            [Display(Name = "Phone number")]
-            public string PhoneNumber { get; set; }
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
-            public string Description { get; set; }
-            public string Genre { get; set; }
-            public DateTime DateOfBirth { get; set; }
-            public Boolean isParticipating { get; set; }
-            public Boolean voted { get; set; }
-            public int noVotes { get; set; }
-        }
-
         [AllowAnonymous]
         public IActionResult Index()
         {
             var user = _userManager.GetUserAsync(User).Result;
 
-            if(user != null) {
+            if(user != null)
+            {
                 ViewBag.allowVote = true;
 
                 Input = new InputModel

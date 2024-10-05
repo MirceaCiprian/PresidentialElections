@@ -31,8 +31,6 @@ namespace WebApp1.Controllers
                 // allowed user can create and edit contacts that they create
                 var managerID = await EnsureUser(serviceProvider, testUserPw, "manager@contoso.com", "Manager", "Manager");
                 await EnsureRole(serviceProvider, managerID, "User");
-
-                //SeedDB(context, adminID);
             }
         }
 
@@ -80,11 +78,6 @@ namespace WebApp1.Controllers
             }
 
             var userManager = serviceProvider.GetService<UserManager<MyUser>>();
-
-            //if (userManager == null)
-            //{
-            //    throw new Exception("userManager is null");
-            //}
 
             var user = await userManager.FindByIdAsync(uid);
 

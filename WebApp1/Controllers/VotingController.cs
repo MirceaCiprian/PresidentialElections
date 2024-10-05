@@ -13,7 +13,8 @@ namespace WebApp1.Controllers
 
         List<UserRankings> list1 = new List<UserRankings>();
 
-        public VotingController(UserManager<MyUser> userManager, ApplicationDbContext context, RoleManager<IdentityRole> roleManager)
+        public VotingController(UserManager<MyUser> userManager, ApplicationDbContext context,
+                                RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _context = context;
@@ -30,7 +31,9 @@ namespace WebApp1.Controllers
             /* get user for the button */
             var user = _userManager.FindByIdAsync(buttonUserId).Result;
             if (user == null)
+            {
                 return NotFound();
+            }
             user.noVotes += 1;
             await _userManager.UpdateAsync(user);
 
@@ -38,7 +41,9 @@ namespace WebApp1.Controllers
             /* get logged in user */
             var currentuser = _userManager.GetUserAsync(User).Result;
             if (currentuser == null)
+            {
                 return NotFound();
+            }
             currentuser.voted = true;
             await _userManager.UpdateAsync(currentuser);
 
@@ -75,11 +80,6 @@ namespace WebApp1.Controllers
                 user.noVotes = 0;
                 await _userManager.UpdateAsync(user);
             }
-
-            //foreach(var entity in _context.UserRankingsTable)
-            //{
-            //    _context.UserRankingsTable.Remove(entity);
-            //}
 
             _context.UserRankingsTable.AddRange(list1);
             votingInstance.currentRound++;
