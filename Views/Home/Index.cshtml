@@ -1,0 +1,80 @@
+﻿@model IEnumerable<MyUser>
+@{
+    ViewData["Title"] = "Home Page";
+}
+@{
+    int rowNo = 0;
+    bool show = true;
+ }
+
+@functions{
+    
+}
+
+<div class="text-center">
+    <h1 class="display-4">2024 Elections </h1>
+</div>
+
+<h1>Candidates</h1>
+@if (Model.Any())
+{
+@*     <a asp-action="Register" asp-controller="Account"
+       class="btn btn-primary mb-3" style="width:auto">
+        Add New User
+    </a> *@
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last</th>
+                <th scope="col">No Votes</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                    <tr>
+                        <th scope="row">@(rowNo += 1)</th>
+                    <td>@user.FirstName</td>
+                    <td>@user.LastName</td>
+                    <td>@user.noVotes</td>
+                    <td>
+@* Enable / disable the user to vote only once.*@
+                        @if(@ViewBag.voted == false)
+                        {
+                            @if (ViewBag.allowVote == true)
+                            {
+                                <form method="post" asp-controller="Voting" asp-action="UpdateVotes">
+                                    <button class="btn btn-primary mb-3" name="buttonUserId" value="@user.Id" style="width:auto"> Vote</button>
+                                </form>
+                            }
+                        }
+                        else
+                        {
+                            <form method="post" asp-controller="Home" asp-action="UpdateVotes">
+                                <button class="btn btn-primary mb-3" name="buttonUserId" value="@user.Id" style="display:none"> Vote</button>
+                            </form>
+                        }
+                    </td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="card">
+        <div class="card-header">
+            No Users Added Yet
+        </div>
+    </div>
+}
+@if(@ViewBag.permision == true)
+{
+    <form method="post" asp-controller="Voting" asp-action="VotingRounds">
+        <button class="btn btn-primary mb-3"> new Round </button>
+    </form>
+}
+
