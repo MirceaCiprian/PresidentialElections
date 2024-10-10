@@ -4,7 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
 using WebApp1.Data;
 using WebApp1.Models;
-using WebApp1.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
